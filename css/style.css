@@ -1,0 +1,291 @@
+@import'fonts.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::-webkit-scrollbar{
+    width: 10px;
+    
+}
+*::-webkit-scrollbar-thumb{
+    background: #3FA5D5;
+    border-radius: 10px;
+    
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Rubik';
+    background: #f1f1f1;
+}
+
+.btn {
+    background: #3FA5D5;
+    color: #fff;
+    max-width: 210px;
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 250ms;
+}
+
+.btn:hover {
+    background: #2a86b2;
+}
+
+/* header start */
+.header {
+    padding: 30px 0;
+}
+.header__nav {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    bottom: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 100px;
+    overflow: hidden;
+    transition: 500ms;
+    overflow-y: auto;
+}
+
+.header__nav:hover{
+    width: 235px;
+}
+
+.header__content {
+    background: url(../images/headerbg.png) no-repeat center center/cover #fff;
+    min-height: 500px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 62px;
+}
+
+.header__title {
+    color: #464748;
+    font-size: 50px;
+    max-width: 332px;
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__title::after{
+    content:'' ;
+    background: #3FA5D5;
+    width: 107px;
+    height: 55px;
+    position: absolute;
+    top: 31px;
+    left: 0;
+    z-index: -1;
+}
+
+.header__txt {
+    color: #696868;
+    max-width: 314px;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.header__logo{
+    padding-left: 20px;
+}
+
+.header__image{
+    padding-left: 15px;
+}
+.header__list{
+    padding: 0 30px;
+    width: max-content;
+}
+
+.header__link{
+    font-size: 18px;
+    color: #939393;
+    display: flex;
+    align-items: center;
+    margin:  55px 0 ;
+    transition: .5s;
+}
+.header__link:hover{
+    color:#2A86B1;
+}
+
+.header__icon{
+    width: 40px;
+    font-size: 40px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* header end */
+/* cards__start */
+.cards__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__cards {
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 255px;
+    width: 100%;
+    padding: 32px 0 20px;
+}
+
+.cards__icon {
+    font-size: 100px;
+    color: #3FA5D5;
+    margin: 60px 0 70px;
+
+}
+
+.cards__title {
+    font-size: 20px;
+    color: #2A86B1;
+    text-align: center;
+}
+
+.cards__cards {
+    justify-content: space-between;
+}
+
+/* cards__end */
+/* info start */
+.info {
+    padding: 45px 0;
+}
+
+.info__title {
+    font-size: 20px;
+    color: #686868;
+    margin-bottom: 22px;
+}
+
+.info__txt {
+    color: #545454;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: justify;
+    max-width: 825px;
+    width: 100%;
+}
+
+.info__card {
+    background: #fff;
+    margin-bottom: 15px;
+    max-width: 255px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+.info__card-title{
+    color: #323232;
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.info__card-txt{
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 300;
+}
+
+.info__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.info_container{
+    display: flex;
+    justify-content: space-between;
+}
+.info__image { 
+    margin-right: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    
+    
+}
+
+/* info end */
+/* footer start */
+.footer{
+    background: #3FA5D5;
+    padding: 40px 0;
+}
+.footer__desk{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.footer__title{
+    font-size: 50px;
+    color: #fff;
+}
+
+.footer__call{
+    color: #fff;
+    font-style: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footer__support{
+    color: #fff;
+    
+}
+
+
+
+/* footer end */
